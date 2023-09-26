@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
+@layer components {
+  .nav_link {
+    @apply text-center text-base text-white px-3 py-2 font-normal font-inter opacity-80 hover:opacity-100 relative flex justify-center;
+  }
+  .btn_primary {
+    @apply text-center text-base bg-primary px-8 py-4 text-white rounded-[5px] font-medium font-inter;
+  }
+  .title2 {
+    @apply text-black  lg:text-[44px] text-3xl  font-inter font-semibold leading-[130%];
+  }
+  .title5 {
+    @apply text-black  lg:text-[25px] text-xl  font-inter font-medium leading-[150%];
+  }
+  .subTitle1 {
+    @apply text-black text-[14px]  font-inter font-normal leading-[160%];
+  }
+
+  .featureCard {
+    @apply flex-grow basis-[263px] shadow-card rounded-[10px] transition-all duration-300 ease-in-out;
+  }
+}
+
+@layer utilities {
+  .nav_link_active:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 80px;
+    height: 2px;
+
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0) 0%,
+      #42b4ee 48.85%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    @apply text-primary;
+  }
+  .container {
+    @apply mx-auto px-4;
+  }
+
+  .featureCard:hover .featureCard_content {
+    @apply bg-featureCard;
+  }
+  .featureCard:hover .featureCard_title {
+    @apply text-white;
+  }
+  .featureCard:hover .featureCard_subTitle {
+    @apply text-white;
+  }
+  .featureCard:hover .featureCard_btn_path {
+    @apply stroke-white;
+  }
+}
