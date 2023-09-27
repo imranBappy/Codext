@@ -2815,6 +2815,10 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:h-\[625px\] {
+    height: 625px;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
