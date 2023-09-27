@@ -2815,6 +2815,10 @@ video {
     height: 625px;
   }
 
+  .md\:h-screen {
+    height: 100vh;
+  }
+
   .md\:justify-between {
     justify-content: space-between;
   }
