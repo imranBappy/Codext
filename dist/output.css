@@ -959,10 +959,6 @@ video {
   height: 441.59px;
 }
 
-.h-\[625px\] {
-  height: 625px;
-}
-
 .h-screen {
   height: 100vh;
 }
@@ -2823,8 +2819,8 @@ video {
     justify-content: space-between;
   }
 
-  .md\:gap-20 {
-    gap: 5rem;
+  .md\:gap-16 {
+    gap: 4rem;
   }
 }
 
