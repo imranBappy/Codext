@@ -24,6 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         featureCard: "url('/assets/feature-bg.svg')",
+        planCard: "url('/assets/planCard-bg.svg')",
       },
     },
   },

@@ -9,8 +9,9 @@
     @apply text-center text-base text-white px-3 py-2 font-normal font-inter opacity-80 hover:opacity-100 relative flex justify-center;
   }
   .btn_primary {
-    @apply text-center text-base bg-primary px-8 py-4 text-white rounded-[5px] font-medium font-inter;
+    @apply text-center transition duration-75 ease-in-out text-base  bg-primary px-8 py-4 text-white rounded-[5px] font-medium font-inter;
   }
+
   .title2 {
     @apply text-black  lg:text-[44px] text-3xl  font-inter font-semibold leading-[130%];
   }
@@ -22,7 +23,38 @@
   }
 
   .featureCard {
-    @apply flex-grow basis-[263px] shadow-card rounded-[10px] transition-all duration-300 ease-in-out;
+    @apply flex-grow basis-[263px] max-w-sm shadow-card rounded-[10px] transition-all duration-300 ease-in-out;
+  }
+
+  /* plan card */
+
+  .plan_card {
+    @apply basis-[360px] shadow-card rounded-[10px];
+  }
+
+  .plan_card_active .plan_card_header {
+    @apply bg-planCard;
+  }
+  .plan_card_active .plan_card_header p {
+    @apply text-white;
+  }
+  .plan_card_active .plan_card_header h6 {
+    @apply text-white opacity-100;
+  }
+
+  .plan_card_active .plan_card_header path {
+    @apply fill-white;
+  }
+  .plan_card_active {
+    box-shadow: 0px 2px 2px 0px #5b1fb0;
+  }
+
+  .plan_card_active .btn_primary {
+    @apply text-white bg-primary;
+  }
+
+  .plan_card_active {
+    box-shadow: 0px 2px 2px 0px #5b1fb0;
   }
 }
 
@@ -57,5 +89,28 @@
   }
   .featureCard:hover .featureCard_btn_path {
     @apply stroke-white;
+  }
+
+  /* plan card */
+  .plan_card:hover .plan_card_header {
+    @apply bg-planCard;
+  }
+
+  .plan_card:hover .plan_card_header p {
+    @apply text-white;
+  }
+  .plan_card:hover .plan_card_header h6 {
+    @apply text-white opacity-100;
+  }
+
+  .plan_card:hover .plan_card_header path {
+    @apply fill-white;
+  }
+  .plan_card:hover {
+    box-shadow: 0px 2px 2px 0px #5b1fb0;
+  }
+
+  .plan_card:hover .btn_primary {
+    @apply text-white bg-primary;
   }
 }
