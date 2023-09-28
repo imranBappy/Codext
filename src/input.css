@@ -29,7 +29,7 @@
   /* plan card */
 
   .plan_card {
-    @apply basis-[360px] shadow-card rounded-[10px];
+    @apply basis-[360px] shadow-card rounded-[10px] transition-all duration-300 ease-in-out;
   }
 
   .plan_card_active .plan_card_header {
@@ -55,6 +55,14 @@
 
   .plan_card_active {
     box-shadow: 0px 2px 2px 0px #5b1fb0;
+  }
+
+  /* review_card */
+  .review_card {
+    @apply flex-grow basis-[360px] shadow-card max-w-sm  rounded-[10px] transition-all duration-300 ease-in-out;
+  }
+  .review_card:hover {
+    box-shadow: 0px 2px 4px 0px #5b1fb0;
   }
 }
 
@@ -112,5 +120,15 @@
 
   .plan_card:hover .btn_primary {
     @apply text-white bg-primary;
+  }
+
+  .review_card:hover img {
+    @apply border-[#5319A6];
+  }
+  .review_card:hover img {
+    @apply border-[#5319A6];
+  }
+  .review_card:hover path {
+    @apply fill-[#5319A6] opacity-10;
   }
 }

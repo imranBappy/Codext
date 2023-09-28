@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Testimonials</title>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
 
+    <!-- Demo styles -->
     <style>
-      .container {
-        width: 100%;
-        height: 100vh;
-        background-color: #f1f1f1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+      .mySwiper {
+        max-width: 1000px;
+        margin: auto;
+        height: 100%;
 
+        position: relative;
+      }
       .card {
-        width: 360px;
-        height: 291px;
-        background-color: #dfecf1;
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
         border-radius: 10px;
-
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: 0.5s;
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 3rem;
-      }
-
-      .card:hover {
-        background: var(--white, #fff);
-        box-shadow: 0px 2px 4px 0px #5b1fb0;
       }
     </style>
   </head>
+
   <body>
-    <div class="container">
-      <div class="card">Card</div>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide card">Slide 1</div>
+        <div class="swiper-slide card">Slide 2</div>
+        <div class="swiper-slide card">Slide 3</div>
+
+        <div class="swiper-slide card">Slide 1</div>
+        <div class="swiper-slide card">Slide 2</div>
+        <div class="swiper-slide card">Slide 3</div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>
