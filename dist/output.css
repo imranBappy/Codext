@@ -893,8 +893,16 @@ video {
   margin-bottom: 3rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-24 {
+  margin-bottom: 6rem;
 }
 
 .mb-5 {
@@ -955,14 +963,6 @@ video {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
 }
 
 .box-border {
@@ -1080,8 +1080,8 @@ video {
   height: 210px;
 }
 
-.h-\[358px\] {
-  height: 358px;
+.h-\[41px\] {
+  height: 41px;
 }
 
 .h-\[441\.59px\] {
@@ -1096,20 +1096,12 @@ video {
   height: 100%;
 }
 
-.h-\[650px\] {
-  height: 650px;
-}
-
-.max-h-\[650px\] {
-  max-height: 650px;
-}
-
-.min-h-\[100px\] {
-  min-height: 100px;
-}
-
 .w-14 {
   width: 3.5rem;
+}
+
+.w-\[41px\] {
+  width: 41px;
 }
 
 .w-\[441\.59px\] {
@@ -1122,6 +1114,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-\[288px\] {
+  max-width: 288px;
 }
 
 .max-w-\[435px\] {
@@ -1677,6 +1673,10 @@ video {
   gap: 2.5rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -1707,10 +1707,6 @@ video {
 
 .gap-\[20px\] {
   gap: 20px;
-}
-
-.gap-2 {
-  gap: 0.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2067,9 +2063,19 @@ video {
   border-bottom-left-radius: 0.25rem;
 }
 
+.rounded-l-none {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
 .rounded-r {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
+}
+
+.rounded-r-none {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .rounded-s {
@@ -2192,6 +2198,10 @@ video {
   border-color: rgb(15 23 42 / 0.1);
 }
 
+.border-white\/10 {
+  border-color: rgb(255 255 255 / 0.1);
+}
+
 .bg-\[\#42B4EE33\] {
   background-color: #42B4EE33;
 }
@@ -2201,6 +2211,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 17 20 / var(--tw-bg-opacity));
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(66 180 238 / var(--tw-bg-opacity));
@@ -2208,11 +2223,6 @@ video {
 
 .bg-primary\/10 {
   background-color: rgb(66 180 238 / 0.1);
-}
-
-.bg-red-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .decoration-slice {
@@ -2345,8 +2355,8 @@ video {
   padding: 0.25rem;
 }
 
-.p-5 {
-  padding: 1.25rem;
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-7 {
@@ -2373,6 +2383,11 @@ video {
   padding-right: 1rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .px-\[25px\] {
   padding-left: 25px;
   padding-right: 25px;
@@ -2393,24 +2408,19 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-\[10px\] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .pb-10 {
@@ -2517,6 +2527,10 @@ video {
   font-family: Inter;
 }
 
+.font-poppins {
+  font-family: Poppins;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -2534,6 +2548,10 @@ video {
   font-size: 16px;
 }
 
+.text-\[18px\] {
+  font-size: 18px;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -2544,6 +2562,10 @@ video {
 
 .text-\[40px\] {
   font-size: 40px;
+}
+
+.text-\[9\.08px\] {
+  font-size: 9.08px;
 }
 
 .text-base {
@@ -2559,18 +2581,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-
-.text-\[10\.38px\] {
-  font-size: 10.38px;
-}
-
-.text-\[14\.27px\] {
-  font-size: 14.27px;
-}
-
-.text-\[9\.08px\] {
-  font-size: 9.08px;
 }
 
 .font-bold {
@@ -2692,6 +2702,10 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white\/70 {
+  color: rgb(255 255 255 / 0.7);
 }
 
 .underline {
@@ -3231,6 +3245,11 @@ video {
   text-align: center;
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .focus\:hover\:text-center:hover:focus {
   text-align: center;
 }
@@ -3311,6 +3330,10 @@ video {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:mt-32 {
+    margin-top: 8rem;
   }
 
   .lg\:flex {

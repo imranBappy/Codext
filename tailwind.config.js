@@ -13,6 +13,7 @@ module.exports = {
       spacing: {},
       fontFamily: {
         inter: "Inter",
+        poppins: "Poppins",
       },
       borderRadius: {
         xl: "20px",

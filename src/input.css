@@ -4,6 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
 @layer components {
   .nav_link {
     @apply text-center text-base text-white px-3 py-2 font-normal font-inter opacity-80 hover:opacity-100 relative flex justify-center;
